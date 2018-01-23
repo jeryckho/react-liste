@@ -11,8 +11,6 @@ services:
       - mongo
     links:
       - "mongo"
-    ports:
-      - "3001:3001"
   haproxy:
     build: ./HAProxy
     depends_on:
